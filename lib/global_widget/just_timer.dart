@@ -42,7 +42,6 @@ class _JustTimerState extends State<JustTimer> {
     final milliseconds =
         _milliseconds > _totalMilliseconds ? _totalMilliseconds : _milliseconds;
     Duration(milliseconds: milliseconds);
-    final dd = Duration.millisecondsPerSecond;
     return (Duration(milliseconds: milliseconds).inMilliseconds %
             Duration.millisecondsPerSecond *
             0.1)
